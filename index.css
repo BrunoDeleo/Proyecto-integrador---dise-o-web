@@ -1,0 +1,286 @@
+@font-face{
+    font-family: 'Archivo';
+    src: url("fonts/Archivo/Archivo-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'ArchivoBlack';
+    src: url("fonts/Archivo/Archivo-Black.ttf");
+}
+
+
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Archivo';
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.logo{
+    height: 60px;
+    width: auto; 
+    
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10 0 10 0;
+    margin: none;
+    background-color: #1478eb;
+}
+
+.navegacion{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.navegacion a{
+    color: white;
+    margin: 15px;
+}
+
+.navegacion a:hover{
+    color: black;
+}
+
+
+
+.portada{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url("./img/portada-fondo.avif");
+    background-size:cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+.portada-texto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 50%;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+}
+
+.portada-texto h1{
+font-size: 4rem;
+margin-bottom: 30px;
+}
+
+.portada-texto p{
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+
+.boton_p{
+    background-color: #1478eb;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+}
+
+.boton_p:hover{
+    background-color: black;
+}
+
+
+
+.seccion-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+
+}
+
+.seccion-galeria img{
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+
+
+.seccion-galeria h2{
+    color:#1478eb;
+    margin: 55px;
+
+}
+
+
+
+.reviews{
+    text-align: center;
+    padding: 30 0 30 0;
+    color: #1478eb;
+    background-color: whitesmoke;
+}
+
+.reviews h2{
+    padding: 0 10 0 10;
+}
+
+
+.contenedor-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card{
+    display: inline-block;
+    max-width: 25%;
+    background-color: #1478eb;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card p:last-child{
+    font-family: 'ArchivoBlack';
+    font-size: .8rem;
+}
+
+.card img{
+    height: 35px;
+}
+
+
+
+
+.contacto{
+margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+background-image:  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./img/maps.PNG");
+background-size:cover;
+height: 200px;
+}
+
+
+.contacto-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 80px;
+}
+
+.footer a{
+    color:#1478eb ;
+}
+
+.footer a:hover{
+    color: whitesmoke;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin: 10 0 10 0;
+        max-width: 75%;
+    }
+
+    .portada-texto{
+        max-width: 80%;
+    }
+
+}
+
+@media (max-width: 426px){
+    .navegacion{
+        font-size: .8rem;
+    }
+
+    .portada-texto h1{
+        font-size: 3rem;
+    }
+
+    .portada-texto p{
+        font-size: .8rem;
+        line-height: 1rem;
+        }
+
+    .footer{
+        font-size: .8rem;
+    }
+
+    .logo{
+        height: 35px;
+        margin-left: 8px;
+    }
+
+}
+
+@media (max-width: 320px){
+    
+    .portada{
+        height: 100vh;
+    }
+
+    .seccion-galeria img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .card p{
+        font-size: .8rem;
+    }
+    
+}

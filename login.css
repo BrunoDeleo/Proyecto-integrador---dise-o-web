@@ -1,0 +1,98 @@
+@font-face{
+    font-family: 'Archivo';
+    src: url("fonts/Archivo/Archivo-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'ArchivoBlack';
+    src: url("fonts/Archivo/Archivo-Black.ttf");
+}
+
+
+body{
+    font-family: 'Archivo';
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.logo{
+    width: 30px;
+    padding: 10px;
+}
+
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_inputs{
+    background-color: #1478eb;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    padding: 50px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 6px 14px -4px rgba(0,0,0,0.32); 
+box-shadow: 6px 6px 14px -4px rgba(0,0,0,0.32);
+}
+
+
+.login_inputs p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.login_inputs a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.login_inputs input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: #1478eb;
+    background-color: whitesmoke;
+    margin-top: 20px;
+       
+}
+
+.login_inputs button{
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke; 
+}
+
+.login_inputs button:hover {
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+  }
+
+  .login_inputs a:hover {
+    text-decoration: underline;
+    }
+
+    
+@media (max-width: 768px){
+    .login_inputs{
+        max-width: 80%;
+    }
+
+}
